@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New window</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/images/icon-default.png"
+      
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+</head>
+<body>
+    <div class="popup-container">
+        <header>
+            <img src="images/icon-white.png" alt="Extension Icon" class="icon">
+            <h1>Code Formatter</h1>
+        </header>
+        <main>
+            <div class="input-container">
+                <input type="text" id="queryInput" placeholder="Type your query here...">
+                <button id="submitButton">Submit</button>
+            </div>
+            <div id="responseArea" class="response-area">
+                <!-- AI Response will appear here -->
+            </div>
+        </main>
+        <div class="options">
+            <i class="fa-solid fa-arrows-rotate" id="reset-icon" ></i>
+            <!-- <i class="fa-solid fa-xmark" id="close-icon"></i> -->
+            <i class="fa-regular fa-copy" id="copy-icon"></i>
+        </div>
+        <footer>
+            <p>Only for educational purpose</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
